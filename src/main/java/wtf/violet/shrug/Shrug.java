@@ -19,12 +19,15 @@
 package wtf.violet.shrug;
 
 import lombok.Getter;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 import wtf.violet.shrug.command.ShrugCommand;
 import wtf.violet.shrug.util.ConfigUtil;
 
 public final class Shrug extends JavaPlugin {
+
+    private static final int BSTATS_ID = 6808;
 
     @Getter private static boolean requirePermission;
     @Getter private static boolean bold;
@@ -34,6 +37,9 @@ public final class Shrug extends JavaPlugin {
     @Override
     public void onEnable() {
         saveDefaultConfig();
+
+        // bStats
+        new Metrics(this, BSTATS_ID);
 
         ConfigUtil config = new ConfigUtil(getConfig(), getLogger());
 
