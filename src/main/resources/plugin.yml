@@ -1,0 +1,11 @@
+name: Shrug
+version: ${project.version}
+main: wtf.violet.shrug.Shrug
+api-version: 1.13
+authors: [Violet "violetwtf" M. <vi@violet.wtf>]
+description: Guys they made /shrug from Discord a real thing
+website: github.com/scuffedmc/shrug
+commands:
+  shrug:
+    description: ¯\_(ツ)_/¯
+    usage: /shrug [message]

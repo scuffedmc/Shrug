@@ -1,0 +1,11 @@
+# Limit people from shrugging (you monster). Default: false
+require-permission: false
+
+# The permission people need to shrug. Default: shrug.command
+permission: shrug.command
+
+# The ChatColor to colorize the shrug with. Default: WHITE
+color: WHITE
+
+# Whether or not to bold the shrug. Default: false
+bold: false
