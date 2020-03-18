@@ -31,5 +31,9 @@ shrug if you have no mesage.
 * You get no support.
 * It was tested and built on Spigot 1.8.8. It'll probably work other places.
 
+## Contributing
+If for some reason, you decide to contribute, use my style. The style for this
+plugin is Google Style Guide, but with 4 spaces instead of 2.
+
 ## License
 See COPYING.
